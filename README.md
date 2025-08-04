@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Search Algorithm Visualizations
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A TypeScript React application that provides interactive visualizations of various search algorithms.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Breadth-First Search (BFS) Visualization**: Step-by-step visualization of BFS traversal on a graph
+- **Interactive Controls**: Navigate through algorithm steps with Previous/Next buttons
+- **Real-time State Display**: See the current queue, visited nodes, and algorithm state
+- **Educational Descriptions**: Each step includes explanations of what the algorithm is doing
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 19** with TypeScript
+- **Tailwind CSS** for styling
+- **TypeScript** for type safety
+- **Create React App** with TypeScript template
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd my-new-app
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm run eject`
+The application will open in your browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (not recommended)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+src/
+├── components/
+│   └── SearchVisualization.tsx  # Main visualization component
+├── App.tsx                      # Main app component
+├── index.tsx                    # App entry point
+├── App.css                      # App styles
+├── index.css                    # Global styles with Tailwind
+└── react-app-env.d.ts          # TypeScript declarations
+```
 
-## Learn More
+## TypeScript Configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The project uses TypeScript with strict type checking enabled. Key configuration:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Strict mode**: Enabled for better type safety
+- **JSX**: Configured for React 17+ JSX transform
+- **Module resolution**: Node.js style
+- **Target**: ES5 for broad browser compatibility
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the MIT License.
