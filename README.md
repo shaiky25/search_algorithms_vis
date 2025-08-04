@@ -5,9 +5,11 @@ A TypeScript React application that provides interactive visualizations of vario
 ## Features
 
 - **Breadth-First Search (BFS) Visualization**: Step-by-step visualization of BFS traversal on a graph
+- **Hill Climbing Search Visualization**: Interactive demonstration of hill climbing algorithm with common problem scenarios
 - **Interactive Controls**: Navigate through algorithm steps with Previous/Next buttons
 - **Real-time State Display**: See the current queue, visited nodes, and algorithm state
 - **Educational Descriptions**: Each step includes explanations of what the algorithm is doing
+- **Problem Region Visualization**: Highlight common hill climbing problems (local maxima, plateaus, ridges, shoulders)
 
 ## Technologies Used
 
@@ -43,7 +45,55 @@ npm start
 
 The application will open in your browser at `http://localhost:3000`.
 
-### Available Scripts
+## Using the Visualizations
+
+### Hill Climbing Search Visualization
+
+The hill climbing visualization demonstrates how the hill climbing algorithm works and its common problems.
+
+#### Controls and Toggles:
+
+1. **Mode Toggle Buttons**:
+   - **"Gets Stuck"**: Shows how hill climbing can fail by getting stuck in a local maximum
+   - **"Finds Solution"**: Shows a successful path where hill climbing reaches the goal
+
+2. **"Show/Hide Problems" Toggle**:
+   - When enabled, highlights common hill climbing problem regions with different colors:
+     - **Pink**: Local Maxima - areas where the algorithm gets stuck
+     - **Yellow**: Plateaus - flat regions with same heuristic values
+     - **Orange**: Ridges - areas requiring non-uphill movement
+     - **Teal**: Shoulders - flat regions leading to higher peaks
+
+3. **Step Navigation**:
+   - **Previous/Next buttons**: Navigate through algorithm steps
+   - **Step counter**: Shows current step and total steps
+   - **Step descriptions**: Explains what's happening at each step
+
+#### Understanding the Grid:
+
+- **Blue cell**: Start position
+- **Orange cell**: Goal position  
+- **Numbers in cells**: Heuristic values (Manhattan distance to goal)
+- **Dark gray cells**: Obstacles
+- **Colored cells during execution**: Current path, open set, closed set
+
+#### Learning Objectives:
+
+- Understand how hill climbing always moves toward the neighbor with the best heuristic
+- See why the algorithm can get stuck in local maxima
+- Learn about common terrain problems that cause hill climbing to fail
+- Compare successful vs. failed pathfinding attempts
+
+### BFS Visualization
+
+The breadth-first search visualization shows how BFS explores a graph level by level.
+
+#### Controls:
+- **Previous/Next buttons**: Navigate through BFS steps
+- **Step descriptions**: Detailed explanations of each algorithm step
+- **Visual state**: See the queue, visited nodes, and current exploration
+
+## Project Structure
 
 - `npm start` - Runs the app in development mode
 - `npm run build` - Builds the app for production
@@ -55,13 +105,21 @@ The application will open in your browser at `http://localhost:3000`.
 ```
 src/
 ├── components/
-│   └── SearchVisualization.tsx  # Main visualization component
+│   ├── SearchVisualization.tsx  # BFS visualization component
+│   └── hillClimbing.tsx        # Hill climbing visualization component
 ├── App.tsx                      # Main app component
 ├── index.tsx                    # App entry point
 ├── App.css                      # App styles
 ├── index.css                    # Global styles with Tailwind
 └── react-app-env.d.ts          # TypeScript declarations
 ```
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (not recommended)
 
 ## TypeScript Configuration
 

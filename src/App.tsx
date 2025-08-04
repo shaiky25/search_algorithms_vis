@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import SearchVisualization from './components/SearchVisualization';
+import HillClimbingVisualization from './components/hillClimbing';
 
 function App(): React.JSX.Element {
   return (
@@ -11,6 +12,7 @@ function App(): React.JSX.Element {
       </header>
       <main className="App-main">
         <SearchVisualization />
+        <HillClimbingVisualization/>
       </main>
     </div>
   );
