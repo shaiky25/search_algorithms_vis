@@ -4,6 +4,7 @@ import SearchVisualization from './components/SearchVisualization';
 import HillClimbingVisualization from './components/hillClimbing';
 import BlocksWorldVisualization from './components/BlocksWorldVisualization';
 import SimulatedAnnealingVisualization from './components/SimulatedAnnealing';
+import CspVisualization from './components/Csp';
 
 function App(): React.JSX.Element {
   return (
@@ -21,6 +22,7 @@ function App(): React.JSX.Element {
             <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-semibold">Hill Climbing</span>
             <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-semibold">Simulated Annealing</span>
             <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold">Blocks World</span>
+            <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold">CSP</span>
           </div>
         </div>
       </header>
@@ -36,6 +38,9 @@ function App(): React.JSX.Element {
         </section>
         <section className="bg-white rounded-lg shadow p-6">
           <BlocksWorldVisualization />
+        </section>
+        <section className="bg-white rounded-lg shadow p-6">
+          <CspVisualization />
         </section>
       </main>
     </div>
