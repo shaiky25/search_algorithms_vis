@@ -2,7 +2,7 @@
   "name": "my-new-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://faiz.github.io/search_algorithms_vis",
+  "homepage": "https://shaiky25.github.io/search_algorithms_vis",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",

@@ -43,7 +43,7 @@ This project is configured for GitHub Pages deployment. To deploy:
 
 1. **Update the homepage URL** in `package.json`:
    ```json
-   "homepage": "https://YOUR_USERNAME.github.io/REPOSITORY_NAME"
+   "homepage": "https://shaiky25.github.io/search_algorithms_vis"
    ```
 
 2. **Deploy to GitHub Pages**:
